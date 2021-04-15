@@ -41,7 +41,7 @@ end
 ```elixir
 def deps do
   [
-    {:axon_datasets, "~> 0.1.0-dev", github: "t-rutten/axon_datasets", branch: "main"}
+    {:axon_datasets, "~> 0.1.0-dev", github: "t-rutten/axon_datasets", branch: "main", override: true}
   ]
 end
 ```
