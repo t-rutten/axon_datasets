@@ -1,5 +1,5 @@
-defmodule AxonData.MNIST do
-  alias AxonData.Utils
+defmodule AxonDatasets.MNIST do
+  alias AxonDatasets.Utils
 
   @default_data_path "tmp/mnist"
   @base_url 'https://storage.googleapis.com/cvdf-datasets/mnist/'

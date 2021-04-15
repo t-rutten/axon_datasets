@@ -1,9 +1,9 @@
-# AxonDatasets
+# AxonDatasetssets
 
 ## Usage
 
 ```elixir
-{train_images, train_labels} = AxonData.MNIST.download()
+{train_images, train_labels} = AxonDatasets.MNIST.download()
 
 {images_binary, tensor_type, shape} = train_images
 
@@ -17,7 +17,7 @@ transform_images = fn {binary, type, shape} ->
 end
 
 {train_images, train_labels} =
-  AxonData.MNIST.download(transform_images: transform_images)
+  AxonDatasets.MNIST.download(transform_images: transform_images)
 
 # Transform labels as well, e.g. get one-hot encoding
 transform_labels = fn {labels_binary, type, _shape} ->
@@ -29,7 +29,7 @@ transform_labels = fn {labels_binary, type, _shape} ->
 end
 
 {images, labels} =
-  AxonData.MNIST.download(
+  AxonDatasets.MNIST.download(
     transform_images: transform_images,
     transform_labels: transform_labels
   )

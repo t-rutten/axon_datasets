@@ -1,4 +1,4 @@
-defmodule AxonData.Utils do
+defmodule AxonDatasets.Utils do
   def unzip_cache_or_download(base_url, zip, data_path) do
     path = Path.join(data_path, zip)
 

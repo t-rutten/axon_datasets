@@ -1,5 +1,5 @@
-defmodule AxonData.FashionMNIST do
-  alias AxonData.Utils
+defmodule AxonDatasets.FashionMNIST do
+  alias AxonDatasets.Utils
 
   @default_data_path "tmp/fashionmnist"
   @base_url 'http://fashion-mnist.s3-website.eu-central-1.amazonaws.com/'

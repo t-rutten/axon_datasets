@@ -1,5 +1,5 @@
-defmodule AxonData.CIFAR10 do
-  alias AxonData.Utils
+defmodule AxonDatasets.CIFAR10 do
+  alias AxonDatasets.Utils
 
   @default_data_path "tmp/cifar10"
   @base_url 'https://www.cs.toronto.edu/~kriz/'
