@@ -4,7 +4,7 @@
 
 We currently support MNIST, FashionMNIST, and CIFAR10 training datasets.
 
-Download or fetch datasets locally like:
+Download or fetch datasets locally:
 
 ```elixir
 {train_images, train_labels} = AxonDatasets.MNIST.download()
