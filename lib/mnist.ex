@@ -6,7 +6,7 @@ defmodule AxonDatasets.MNIST do
   @image_file 'train-images-idx3-ubyte.gz'
   @label_file 'train-labels-idx1-ubyte.gz'
 
-  defp download_images(opts \\ []) do
+  defp download_images(opts) do
     data_path = opts[:data_path] || @default_data_path
     transform = opts[:transform_images] || fn out -> out end
 
@@ -16,7 +16,7 @@ defmodule AxonDatasets.MNIST do
     transform.({images, {:u, 8}, {n_images, n_rows, n_cols}})
   end
 
-  defp download_labels(opts \\ []) do
+  defp download_labels(opts) do
     data_path = opts[:data_path] || @default_data_path
     transform = opts[:transform_labels] || fn out -> out end
 
